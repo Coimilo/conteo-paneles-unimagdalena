@@ -87,7 +87,7 @@ st.sidebar.divider()
 
 st.sidebar.subheader("2. Ajuste de Umbrales Globales")
 threshold_sup = st.sidebar.slider("Umbral ROI Superior (Sol)", min_value=0, max_value=255, value=81)
-threshold_inf = st.sidebar.slider("Umbral ROI Inferior", min_value=0, max_value=255, value=85)
+threshold_inf = st.sidebar.slider("Umbral ROI Inferior", min_value=0, max_value=255, value=90)
 area_min = st.sidebar.number_input("Área Mínima de Panel (px)", min_value=100, max_value=10000, value=4000, step=100)
 
 st.sidebar.divider()
