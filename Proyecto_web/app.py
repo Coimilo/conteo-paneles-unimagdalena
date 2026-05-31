@@ -55,7 +55,7 @@ st.sidebar.subheader("1. Selección de Imagen")
 # Menú simplificado únicamente con las dos imágenes optimizadas
 opcion_imagen = st.sidebar.selectbox(
     "Seleccione la imagen de análisis:",
-    ["DJI_0613.JPG (Predeterminada)", "DJI_0612.JPG"]
+    ["DJI_0612.JPG (Predeterminada)", "DJI_0613.JPG"]
 )
 
 # Determinación de la ruta del archivo en disco
