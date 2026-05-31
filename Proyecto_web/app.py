@@ -50,7 +50,7 @@ with st.expander("📘 Fundamentos de Señales Espaciales (Justificación Técni
 # =========================================================
 st.sidebar.header("⚙️ Panel de Control")
 
-st.sidebar.subheader("1. Selección de Dataset")
+st.sidebar.subheader("1. Selección de Imagen")
 
 # Menú simplificado únicamente con las dos imágenes optimizadas
 opcion_imagen = st.sidebar.selectbox(
