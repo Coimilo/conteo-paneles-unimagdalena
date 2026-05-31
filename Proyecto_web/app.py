@@ -59,12 +59,24 @@ opcion_imagen = st.sidebar.selectbox(
 )
 
 # Determinación de la ruta del archivo en disco
+# =========================================================
+# SOLUCIÓN DE RUTA DINÁMICA PARA LA NUBE
+# =========================================================
+# 1. Obtenemos la ruta absoluta de la carpeta donde vive este app.py
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Definimos el nombre exacto del archivo (¡Ojo con las mayúsculas/minúsculas!)
 nombre_archivo = "DJI_0613.JPG" if "0613" in opcion_imagen else "DJI_0612.JPG"
-image_path = os.path.join("images", nombre_archivo)
+
+# 3. Construimos la ruta uniendo la carpeta del script + 'images' + el archivo
+image_path = os.path.join(BASE_DIR, "images", nombre_archivo)
+
+# Validación de existencia
 img_ready = os.path.exists(image_path)
 
 if not img_ready:
-    st.sidebar.error(f"Falta el archivo '{nombre_archivo}' en la carpeta 'images/'.")
+    st.sidebar.error(f"No se encontró '{nombre_archivo}' en la ruta calculada: {image_path}")
+    st.sidebar.warning("👉 Verifica en GitHub si la extensión está en minúsculas (.jpg) o mayúsculas (.JPG)")
 
 st.sidebar.divider()
 
