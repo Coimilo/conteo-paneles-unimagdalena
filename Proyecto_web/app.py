@@ -42,7 +42,7 @@ with st.expander("📘 Fundamentos de Señales Espaciales (Justificación Técni
     * **Umbralización (Operación no lineal):** La segmentación es una operación no lineal sobre la amplitud de la señal espacial. Se utilizó una estrategia híbrida (adaptativa y global) para contrarrestar los cambios de iluminación y sombras.
     * **Morfología Matemática:** Funciona como un filtro espacial no lineal de post-procesamiento para rellenar discontinuidades y separar frecuencias espaciales adyacentes (paneles muy juntos).
     
-    *Desarrollado por: Camilo Cantillo*
+    *Desarrollado por: Camilo Cantillo, Luis Mercado*
     """)
 
 # =========================================================
