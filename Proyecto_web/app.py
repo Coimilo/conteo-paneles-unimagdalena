@@ -165,7 +165,7 @@ if run_process and img_ready:
             col_met_sup, col_met_inf = st.columns(2)
 
             with col_met_sup:
-                st.subheader("Región Superior (Techo Edificio Docente)")
+                st.subheader("Región Superior")
                 m1, m2, m3 = st.columns(3)
                 m1.metric("Detectados", conteo_sup, help=f"Valor real de referencia: {conteo_real_sup}")
                 m2.metric("Error Absoluto", error_abs_sup)
@@ -174,7 +174,7 @@ if run_process and img_ready:
                 st.progress(precision_sup, text=f"Exactitud del algoritmo: {precision_sup*100:.1f}%")
 
             with col_met_inf:
-                st.subheader("Región Inferior (Módulos en Suelo)")
+                st.subheader("Región Inferior")
                 m1, m2, m3 = st.columns(3)
                 m1.metric("Detectados", conteo_inf, help=f"Valor real de referencia: {conteo_real_inf}")
                 m2.metric("Error Absoluto", error_abs_inf)
